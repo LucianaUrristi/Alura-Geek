@@ -1,0 +1,22 @@
+{
+  "products": [
+  {
+      "id": "1",
+      "nombre": "iPad Pro 12.9",
+      "precio": 900000,
+      "imagen": [
+      "https://i.postimg.cc/kX8PKZpq/ipad.jpg",
+      "https://i.postimg.cc/jqBrWKvM/ipad2.jpg"
+      ]
+  },
+  {
+      "id": "2",
+      "title": "iPad Pro 13",
+      "precio": 800000,
+      "imagen": [
+          "https://i.postimg.cc/jqBrWKvM/ipad2.jpg",
+          "https://i.postimg.cc/kX8PKZpq/ipad.jpg"
+      ]
+  }
+  ]
+}

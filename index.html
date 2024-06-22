@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos-form.css">
+    <link rel="stylesheet" href="../css/flexbox.css">
+    <title>AluraGeek</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="encabezado">
+            <a class="logo" href="./index.html"></a>
+            <h1>ALURA GEEK</h1>
+            
+        </nav>
+
+    </header>
+    <main class="main">
+        <section class="products">
+            <h2 class="products__titulo">MIS PRODUCTOS:</h3>
+            <ul class="products__container" alt="products alura" data-lista>
+                
+                    <li class="products__item">
+                        
+                        <div class="descripcion-products">
+                            <img src="./img/gameboy-Classic.jpg" alt="gameboy ">
+                            <div class="precio">
+                                <h3>Gameboy</h3>
+                                <p>$40</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="products__item">
+                        
+                        <div class="descripcion-products">
+                            <img src="./img/stormtrooper.jpg" alt="stormtrooper">
+                            <div class="precio">
+                                <h3>Stormtrooper</h3>
+                                <p>$80</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        
+                        <div class="descripcion-products">
+                            <img src="./img/gameboy-Classic.jpg" alt="gameboy ">
+                            <div class="precio">
+                                <h3>Gameboy</h3>
+                                <p>$40</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="products__item">
+                        
+                        <div class="descripcion-products">
+                            <img src="./img/stormtrooper.jpg" alt="stormtrooper">
+                            <div class="precio">
+                                <h3>Stormtrooper</h3>
+                                <p>$80</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        
+                        <div class="descripcion-products">
+                            <img src="./img/gameboy-Classic.jpg" alt="gameboy ">
+                            <div class="precio">
+                                <h3>Gameboy</h3>
+                                <p>$40</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="products__item">
+                        
+                        <div class="descripcion-products">
+                            <img src="./img/stormtrooper.jpg" alt="stormtrooper">
+                            <div class="precio">
+                                <h3>Stormtrooper</h3>
+                                <p>$80</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="products__item">
+                        
+                        <div class="descripcion-products">
+                            <img src="./img/gameboy-Classic.jpg" alt="gameboy ">
+                            <div class="precio">
+                                <h3>Gameboy</h3>
+                                <p>$40</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="products__item">
+                        
+                        <div class="descripcion-products">
+                            <img src="./img/stormtrooper.jpg" alt="stormtrooper">
+                            <div class="precio">
+                                <h3>Stormtrooper</h3>
+                                <p>$80</p>
+                            </div>
+                        </div>
+                    </li>
+                    
+                
+            </ul>
+        </section>
+
+        <section class="formulario">
+            <form class="container__formulario" data-formulario>
+                <h2 class="formulario__titulo">AGREGAR PRODUCTO:</h3>
+                    <div class="formulario__campo">
+                        <label class="campo__etiqueta" for="nombre"></label>
+                        <input name="nombre" class="campo__escrita" required
+                            placeholder="nombre..." id='nombre' data-nombre/><!-- CAMBIAR EL DATA-URL POR DATA-NOMBRE -->
+                    </div>
+    
+                    <div class="formulario__campo">
+                        <label class="campo__etiqueta" for="precio"></label>
+                        <input name="titulo" class="campo__escrita" required placeholder="precio..."
+                            id='precio' data-precio/> <!-- CAMBIAR EL DATA-URL POR DATA-PRECIO -->
+                    </div>
+    
+                    <div class="formulario__campo">
+                        <label class="campo__etiqueta" for="imagen"></label>
+                        <input name="imagen" class="campo__escrita" required placeholder="imagen..."
+                            id='imagen' data-imagen/>
+                    </div>
+                    <div class="butons">
+                    <input class="formulario__boton enviar" type="submit" />
+                    <input class="formulario__boton limpiar" id="limpiar" type="button" value="Limpiar" />
+                    </div>
+            </form>
+
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- <script src="./js/limpiarCampos.js" type="module"></script>
+    <script src="./js/crearProducto.js" type="module"></script>
+    <script src="./js/mostrarProductos.js" type="module"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/estilos-form.css">
+    <link rel="stylesheet" href="../css/flexbox.css">
+    <title>AluraPlay</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- encabezado -->
+    <header>
+
+        <nav class="encabezado">
+            <a class="logo" href="../index.html"></a>
+
+            <div class="cabecalho__icones">
+                <a href="./enviar-video.html" class="cabecalho__videos"></a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="container">
+
+        <form class="container__formulario" data-formulario>
+            <h2 class="formulario__titulo">AGREGAR PRODUCTO:</h3>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="nombre"></label>
+                    <input name="nombre" class="campo__escrita" required
+                        placeholder="nombre..." id='nombre' data-url/><!-- CAMBIAR EL DATA-URL POR DATA-NOMBRE -->
+                </div>
+
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="precio"></label>
+                    <input name="titulo" class="campo__escrita" required placeholder="precio..."
+                        id='precio' data-titulo/> <!-- CAMBIAR EL DATA-URL POR DATA-PRECIO -->
+                </div>
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="imagen"></label>
+                    <input name="imagen" class="campo__escrita" required placeholder="imagen..."
+                        id='imagen' data-imagen/>
+                </div>
+
+                <input class="formulario__boton" type="submit" />
+                <input class="formulario__boton" type="submit" />
+        </form>
+
+    </main>
+    <script src="../js/crearVideo.js" type="module"></script>
+</body>
+
+</html>
