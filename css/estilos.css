@@ -1,88 +1,213 @@
-*,
-*::before,
-*::after {
-    --azul-escuro: #154580;
-    --azul-medio: #3970BE;
-    --azul-claro: #E5F1FF;
-    --cinza-texto: #444444;
-    --cinza-claro: #ECECEC;
-    box-sizing: border-box;
-}
 
 body {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    background-color: var(--azul-claro);
-    position: relative;
+    font-family: "Press Start 2P", system-ui;
     width: 100%;
     height: 100vh;
-    overflow: auto;
     font-size: 14px;
-    color: white;
-    box-sizing: border-box;
     text-align: center;
 }
 
-/* ESTILOS DO HEADER */
+/* ESTILOS DEL HEADER */
 
-.encabezado {
+.encabezado, .footer {
     background-color: #5D04D9;
-    position: fixed;
+    display: flex;
+    justify-content: center;
     top: 0;
     height: 80px;
     width: 100%;
     padding: 0 25px;
     z-index: 2;
 }
-
-/* .logo {
-    background-image: url(../img/encabezado/Logo.png);
-    background-repeat: no-repeat;
+.aluraLogo{
+    width: 60%;
     padding: 15px 65px;
     cursor: pointer;
 }
+/*ESTILOS PRODUCTOS*/
 
-
-.encabezado__videos {
-    background-image: url(../img/encabezado/video_call.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 15px;
-} */
-
-/* ESTILOS DA SECCION PRODUCTOS */
+/* ESTILOS DE SECCION PRODUCTOS */
 
 .main{
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin: 5% 3%;
+    padding: 0;
+    border: 5px solid green;
+}
+/* SECCION PRODUCTOS */
+
+.products{
+    border: 3px solid red;
+    height: 90vh;
+    width: 45vw;
+    margin: 0;
+    padding: 0;
+}
+
+.products__titulo{
+    font-size: 24px;
+    color: black;
+    margin: 5%;
+    text-align: center;
+    height: auto;
+}
+
+.products__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+    border: 5px solid orange;
+    height: 78vh;
+    margin: 2%;
+    
+    
+}
+
+.product__item{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
+.product__img{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 50px;
+    width: 50px;
+}
 
+/* grid productos */
 
-/* .mensaje {
+.descripcion-products {
+    margin-top: 1rem;
     display: grid;
+    text-align: start;
+    column-gap: 1rem;
+    row-gap: 10px;
+    grid-template-columns: auto 1fr;
+}
+
+.descripcion-products img {
+    grid-area: 1 / 1 / 3 / 2;
+}
+/*
+.descripcion-products h3 {
+    grid-area: 1 / 2 / 2 / 3;
+    font-weight: 700;
+    color: #444444;
+}
+
+.descripcion-products p {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 14px;
+    color: #444444;
+}
+
+.descripcion-products img {
+    width: 2em;
+    height: 2em;
+    border-radius: 100%;
+}*/
+
+/*ESTILOS FORMULARIO*/
+
+.container__formulario {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-} */
-
-.mensaje__imagen {
-    width: 30%;
+    text-align: initial;
 }
 
-.mensaje__titulo {
-    color: var(--azul-medio);
+.formulario__titulo {
+    color: black;
     font-weight: bold;
     font-size: 21px;
 }
 
+.formulario__campo {
+    margin: 1em;
+    font-size: 1.6em;
+}
+
+.campo__etiqueta {
+    line-height: 1.5;
+    padding: 0 0 .1em 1em;
+    font-weight: 700;
+    color: var(--azul-medio);
+}
+
+.campo__escrita {
+    width: 40vw;
+    border-radius: 40px;
+    border: 2px solid #03318C;
+    display: block;
+    color: #03318C;
+    padding: 1em;
+}
+
+input::placeholder{
+    color: #03318C;
+}
 
 
-@media(min-width: 834px) {
+
+.butons{
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.enviar, .limpiar {
+    padding: 1em 3em;
+    margin: 2em 0;
+    border-radius: 24px;
+    background-color: var(--azul-escuro);
+}
+
+
+.footer{
+    width: 100%;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer img{
+    width: 374px;
+    height: 56px;
+}
+
+.footer h3, h4{
+    font-family: "IBM Plex Mono", Arial, Helvetica, sans-serif;
+}
+
+.footer h4{
+    font-weight: 100;
+    margin-top: 1%;
+}
+
+
+
+
+
+
+
+@media(max-width: 430px) {
 
     body {
         height: 100vh;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
     }
 
 }

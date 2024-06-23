@@ -1,0 +1,60 @@
+
+
+
+
+/Card de producto/
+.pCProductCard {
+    background-color: #f0f0f0;
+    border-radius: 15px; /redondea las puntas/
+    /* max-width: 25%; porcentaje respecto a la columna*/
+    width: auto;
+    border: 1px solid #ccc;
+    color: #383838;
+    padding: 5%;
+    text-decoration: none;
+}
+.pCImg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.pCInfo {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.pCTitle {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    word-wrap: break-word;
+    display: block;
+}
+.pCDescription {
+    font-size: 12px;
+    font-weight: 400;
+    color: #383838;
+    margin-bottom: 5px;
+}
+.pCPriceBlock {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.pCPriceBlock .pCPrice {
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.pCPriceBlock .pCDiscount {
+    font-size: 12px;
+    font-weight: 700;
+    color: #428f13;
+}
+.pCTaxPolicy {
+    font-size: 10px;
+    font-weight: 300;
+}
