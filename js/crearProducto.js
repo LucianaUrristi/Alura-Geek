@@ -9,7 +9,6 @@ async function crearProducto(event){
     const precio = document.querySelector("[data-precio]").value;
     const imagen = document.querySelector("[data-imagen]").value;
 
-    const descripcion = Math.floor(Math.random*10).toString();
 try {
     await conexionAPI.enviarProducto(nombre, precio, imagen);
     window.location.href="../pages/envio-concluido.html";

@@ -1,22 +1,52 @@
 {
   "products": [
-  {
-      "id": "1",
-      "nombre": "iPad Pro 12.9",
-      "precio": 900000,
+    {
+      "id": 1,
+      "nombre": "Game Boy Classic",
+      "precio": 60,
       "imagen": [
-      "https://i.postimg.cc/kX8PKZpq/ipad.jpg",
-      "https://i.postimg.cc/jqBrWKvM/ipad2.jpg"
+        "./img/gameboy-Classic.jpg"
       ]
-  },
-  {
-      "id": "2",
-      "title": "iPad Pro 13",
-      "precio": 800000,
+    },
+    {
+      "id": 2,
+      "nombre": "Stormtrooper",
+      "precio": 80,
       "imagen": [
-          "https://i.postimg.cc/jqBrWKvM/ipad2.jpg",
-          "https://i.postimg.cc/kX8PKZpq/ipad.jpg"
+        "./img/stormtrooper.jpg"
       ]
-  }
+    },
+    {
+      "id": 3,
+      "nombre": "Game Boy Classic",
+      "precio": 60,
+      "imagen": [
+        "./img/gameboy-Classic.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Stormtrooper",
+      "precio": 80,
+      "imagen": [
+        "./img/stormtrooper.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Game Boy Classic",
+      "precio": 60,
+      "imagen": [
+        "./img/gameboy-Classic.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Stormtrooper",
+      "precio": 80,
+      "imagen": [
+        "./img/stormtrooper.jpg"
+      ]
+    }
   ]
 }

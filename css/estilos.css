@@ -1,4 +1,4 @@
- 
+
 /* Body */
 body {
   font-family: "Press Start 2P", system-ui;
@@ -35,7 +35,6 @@ body {
   align-items: flex-start;
   padding: 2rem;
   gap: 2rem;
-  height: 1235px;
   border-top: 0.5em solid #D6D6D6;
 }
 
@@ -48,10 +47,10 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   white-space: nowrap;
-  
+
 }
 
-.products__titulo {
+.products__titulo, .mensaje__titulo, .formulario__titulo {
   font-size: 24px;
   color: black;
   margin-bottom: 1rem;
@@ -59,17 +58,22 @@ body {
   height: auto;
   margin: 5%;
 }
-.products__scroll__container{
-  height: 87%;
-  overflow-y: auto;
-  padding-right: 2%;  
-  box-shadow: -12px 10px 5.8px rgba(0, 0, 0, 0.25);
 
+
+.products__container{
+  height: 50vh;
+  /* height: 87%; */
+  overflow-y: auto;
+  box-shadow: -12px 10px 5.8px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  
 }
 
 .products__scroll__container::-webkit-scrollbar {
   width: 10px;
-  
+
 }
 
 .products__scroll__container::-webkit-scrollbar-track {
@@ -80,22 +84,13 @@ body {
   background: #D6D6D6;
   border-radius: 10px;
   height: 10px;
-  
-  
 }
 
 .products__scroll__container::-webkit-scrollbar-thumb:hover {
   background: #9b9999
   ;
 }
-.products__container {
-  
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 0 0 0 3%;
-  
-}
+
 
 .product__item {
   background-color: #5D04D9;
@@ -147,8 +142,6 @@ body {
   font-weight: bold;
   width: 100%;
   border-radius: 8px;
-  margin-top: 0.5rem;
-  
 }
 
 .product__precio {
@@ -164,17 +157,13 @@ body {
 
 }
 
-/* Formulario Section */
-.formulario {
-  width: 45%;    
+.mensaje__error__titulo{
+  color: red;
 }
 
-.formulario__titulo {
-  font-size: 24px;
-  color: black;
-  text-align: center;
-  height: auto;
-  margin: 5%;
+/* Formulario Section */
+.formulario {
+  width: 45%;
 }
 
 .container__formulario {
@@ -184,7 +173,7 @@ body {
   align-items: center;
   text-align: left;
   gap: 1rem;
-  
+
 }
 
 .formulario__campo {
@@ -193,7 +182,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   font-family: 'IBM Plex Mono', monospace;
-  
+
 }
 
 .campo__etiqueta {
@@ -208,7 +197,7 @@ body {
   color: #03318C;
   width: 35vw;
   font-weight: 500;
-  
+
 }
 
 input::placeholder {
@@ -223,7 +212,7 @@ input::placeholder {
 }
 
 .formulario__boton {
-  
+
   font-family: 'IBM Plex Mono', monospace;
   font-size: 20px;
   background-color: #03318C;
@@ -242,7 +231,7 @@ input::placeholder {
   background-color: #fff;
   color: #03318C;
   border: 3px solid #03318C;
-  
+
 }
 
 /* Footer */
@@ -289,7 +278,7 @@ input::placeholder {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
   body {
     height: auto;
   }
@@ -319,22 +308,26 @@ input::placeholder {
     text-align: center;
   }
 
-  .products__scroll__container{
-    height: 87%;
+
+
+.products__scroll__container{
+    height: auto;
     overflow-x: auto;
     overflow-y:hidden;
-    padding-top: 2%;  
     box-shadow: none;
-  
+
   }
-  .products__container {
-    
+
+
+.products__container {
+    display: flex;
     gap: 1rem;
-    padding: 0 0 0 3%;
-    
+    padding: 0 0 10% 3%;
+
   }
-  .product__item{
-    
+
+  .product__item {
+    width: calc(50vw - 2rem);
   }
 
   .footer {

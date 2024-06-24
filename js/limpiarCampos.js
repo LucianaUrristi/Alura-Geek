@@ -3,6 +3,7 @@ import { conexionAPI } from './conexionAPI.js';
 const formulario = document.querySelector("[data-formulario]");
 
 export function limpiarCampos(event){
+    console.log("asdasd")
 
     event.preventDefault();
     const limpiar = document.getElementById('limpiar');

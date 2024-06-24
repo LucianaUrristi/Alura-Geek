@@ -4,18 +4,24 @@ import { conexionAPI } from "./conexionAPI.js";
 const lista = document.querySelector("[data-lista]");
 
 export default function  crearCard(nombre, precio, imagen){
-    const product = document.createElement("li");
+    const product = document.createElement("div");
 
     product.className = "product__item";
-    product.innerHTML = `<iframe width="100%" height="72%"
-    name="${nombre}" frameborder="0"
-    clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen></iframe>
-    <div class="descripcion-video">
-        <img src="./img/logoo.png" alt="logo canal alura">
-        <h3>${nombre}</h3>
-        <p>${precio}</p>
-    </div>
+    product.innerHTML = `
+    
+        <img 
+        class="product__img"
+        src="${imagen}"
+        alt="gameboy"
+        />
+        <div class="product__info">
+            <span class="product__titulo">${nombre}</span>
+        </div>
+        <div class="product__precio__bloque">
+        <span class="product__precio">$ ${precio}</span>
+        <span class="product__delete"><i class="fas fa-trash-alt"></i></span>
+        </div>
+    
     `;
 
     return product;
@@ -28,7 +34,7 @@ async function listarProductos(){
         listaAPI.forEach(product =>lista.appendChild(crearCard(product.nombre, product.precio, product.imagen)));
         
     }catch{
-        lista.innerHTML=`<h2 class="mensaje__titulo">Ha ocurrido un problema con la conexion</h2>`
+        lista.innerHTML=`<h2 class="mensaje__error__titulo">Ha ocurrido un problema con la conexion</h2>`
     }
     
 }
