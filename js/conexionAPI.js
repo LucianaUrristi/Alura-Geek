@@ -23,29 +23,20 @@ async function enviarProducto(nombre, precio, imagen){
     return conexionConvertida;
 }
 
-export async function eliminarProducto(id) {
-    try {
-        const response = await fetch(`${conexion}/products/${id}`, {
-            method: 'DELETE',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-        });
+async function eliminarProducto(id) {
+    const conexion = await fetch(`http://localhost:3001/products/${id}`, {
+        method: "DELETE",
+    });
 
-        if (!response.ok) {
-            throw new Error('No se pudo eliminar el producto');
-        }
-
-        
-        return response.json();
-    } catch (error) {
-        console.error('Error al eliminar el producto:', error);
-        throw error; 
+    if (!conexion.ok) {
+        throw new Error("Ha ocurrido un error al eliminar el producto.");
     }
 }
 
-export const conexionAPI={
-    listarProductos, enviarProducto, eliminarProducto
-}
+export const conexionAPI = {
+    listarProductos,
+    enviarProducto,
+    eliminarProducto
+};
 
 

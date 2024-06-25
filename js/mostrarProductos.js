@@ -1,18 +1,21 @@
 import { conexionAPI } from "./conexionAPI.js";
-
+import { initEliminarProductoListener } from './eliminarProducto.js';
 
 const lista = document.querySelector("[data-lista]");
 
-export default function  crearCard(nombre, precio, imagen){
+export default function  crearCard(id, nombre, precio, imagen){
     const product = document.createElement("div");
+    const imagenPredet = "./img/sin-imagen.jpg";
+    const imagenValida = imagen || imagenPredet;
 
     product.className = "product__item";
+    product.setAttribute('data-id', id);
     product.innerHTML = `
     
         <img 
         class="product__img"
-        src="${imagen}"
-        alt="gameboy"
+        src="${imagenValida}"
+        alt="${nombre}"
         />
         <div class="product__info">
             <span class="product__titulo">${nombre}</span>
@@ -23,16 +26,22 @@ export default function  crearCard(nombre, precio, imagen){
         </div>
     
     `;
-
+    
     return product;
-}
+};
 
 async function listarProductos(){
+    
+    
+
     try{
         const listaAPI = await conexionAPI.listarProductos();
+        if (listaAPI.length === 0) {
+        lista.innerHTML = `<h2 class="mensaje__error__titulo">No hay productos para mostrar.</h2>`;
+        return;
+        }
+        listaAPI.forEach(product =>lista.appendChild(crearCard(product.id, product.nombre, product.precio, product.imagen)));
 
-        listaAPI.forEach(product =>lista.appendChild(crearCard(product.nombre, product.precio, product.imagen)));
-        
     }catch{
         lista.innerHTML=`<h2 class="mensaje__error__titulo">Ha ocurrido un problema con la conexion</h2>`
     }
@@ -40,3 +49,4 @@ async function listarProductos(){
 }
 
 listarProductos();
+initEliminarProductoListener();
