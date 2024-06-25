@@ -47,18 +47,6 @@
       "imagen": [
         "./img/stormtrooper.jpg"
       ]
-    },
-    {
-      "id": "e9d4",
-      "nombre": "asd",
-      "precio": "600",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdx38W42k6ujIXAghZNamkWwcMPEXWZbb8CA&s"
-    },
-    {
-      "id": "79f2",
-      "nombre": "asd",
-      "precio": "600",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdx38W42k6ujIXAghZNamkWwcMPEXWZbb8CA&s"
     }
   ]
 }
