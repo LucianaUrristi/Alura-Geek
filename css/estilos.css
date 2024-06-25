@@ -11,7 +11,7 @@ body {
 }
 
 /* Header and Footer */
-.encabezado, .footer {
+.encabezado{
   background-color: #5D04D9;
   display: flex;
   justify-content: center;
@@ -38,6 +38,21 @@ body {
   border-top: 0.5em solid #D6D6D6;
 }
 
+
+
+.mensaje__titulo,
+.product__precio,
+.formulario__campo,
+.product__item,
+.footer h3,
+.footer h4{
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.imagen-back{
+  width: 60px;
+}
+
 /* Products Section */
 .products {
   width: 50%;
@@ -62,7 +77,6 @@ body {
 
 .products__container{
   height: 50vh;
-  /* height: 87%; */
   overflow-y: auto;
   box-shadow: -12px 10px 5.8px rgba(0, 0, 0, 0.25);
   display: grid;
@@ -103,7 +117,6 @@ body {
   flex-direction: column;
   padding: 1rem;
   color: white;
-  font-family: "IBM Plex Mono";
   border: 3px solid black;
   height: 258px;
   width: 196px;
@@ -144,9 +157,6 @@ body {
   border-radius: 8px;
 }
 
-.product__precio {
-  font-family: 'IBM Plex Mono', monospace;
-}
 
 .product__delete {
   cursor: pointer;
@@ -181,8 +191,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  font-family: 'IBM Plex Mono', monospace;
-
 }
 
 .campo__etiqueta {
@@ -212,7 +220,6 @@ input::placeholder {
 }
 
 .formulario__boton {
-
   font-family: 'IBM Plex Mono', monospace;
   font-size: 20px;
   background-color: #03318C;
@@ -235,7 +242,8 @@ input::placeholder {
 }
 
 /* Footer */
-.footer {
+.footer, .footer, .footer-concluido {
+  background-color: #5e17eb;
   width: 100%;
   height: 232px;
   display: flex;
