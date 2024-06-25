@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Game Boy Classic",
       "precio": 60,
       "imagen": [
@@ -9,7 +9,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Stormtrooper",
       "precio": 80,
       "imagen": [
@@ -17,7 +17,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Game Boy Classic",
       "precio": 60,
       "imagen": [
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "Stormtrooper",
       "precio": 80,
       "imagen": [
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "nombre": "Game Boy Classic",
       "precio": 60,
       "imagen": [
@@ -41,12 +41,24 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "Stormtrooper",
       "precio": 80,
       "imagen": [
         "./img/stormtrooper.jpg"
       ]
+    },
+    {
+      "id": "e9d4",
+      "nombre": "asd",
+      "precio": "600",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdx38W42k6ujIXAghZNamkWwcMPEXWZbb8CA&s"
+    },
+    {
+      "id": "79f2",
+      "nombre": "asd",
+      "precio": "600",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdx38W42k6ujIXAghZNamkWwcMPEXWZbb8CA&s"
     }
   ]
 }
